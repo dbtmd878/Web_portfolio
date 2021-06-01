@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seung Guk portfolio</title>
+    <meta name="description" />
+    <meta name="author" content="Seung_Guk" />
+    <link rel="icon" href="./imgs/favicon1.png" type="png" />
+    <script
+      src="https://kit.fontawesome.com/93c68e222d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-star"></i>
+        <a href="#" class="navbar_a">Seung Guk</a>
+      </div>
+      <ul class="navbar__menu">
+        <!-- data-link : 메뉴 아이템마다 해당하는 섹션의 아이디를 가지고 있다.  -->
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#testimonials">
+          Testimonial
+        </li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="./imgs/IMG_3131.JPG"
+          alt="Avatar's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Welecome,<br />To my Web Page</h1>
+        <h2 class="home__description">
+          I will be the best Front-end developer!!
+        </h2>
+      </div>
+      <button class="home__contact">Contact Me</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        2016년도 한남대학교 컴퓨터 통신 무인 기술학과에 입학하였습니다.<br>
+        현재 Front-end 개발자가 되기 위하여 열심히 공부하고 있습니다. 저는 최고의 Front-end 개발자가 될 것이니 저를 기억해주시기 바랍니다.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">HTML5</h2>
+          <div class="major__description">
+            웹 페이지 제작 경험 有
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h2 class="major__title">Css</h2>
+          <p class="major__description">
+            flex-box<br>
+            grid studying
+          </p>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h2 class="major__title">JavaScript</h2>
+          <p class="major__description">
+            interective studying
+          </p>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="./imgs/jobs/logo.png"
+            alt="school"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">
+              Currently working at Samsung as Software Engineer
+            </p>
+            <p class="job__period">2016 March ~ until now</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          학교를 다니면서 C, C++, Java, Linux, Html, Css, JavaScript를 공부해보았습니다.<br>
+          현재는 JavaScript를 통하여 interective한 웹사이트를 만들어 보기 위하여 공부하고 있습니다.<br>
+          향후 TypeScript 와 React를 공부하기 위한 계획이 있습니다.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>60%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>IntelliJ</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git hub</span></li>
+                <li><span>Git Kraken</span></li>
+                <li><span>Photo Shop</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>업데이트 중입니다.</h3>
+        <div class="work__categories">
+          <button class="category__btn selected first" data-filter="*">
+            All <span class="category__count">7</span>
+          </button>
+          <button class="category__btn sec" data-filter="front-end">
+            Html <span class="category__count">2</span>
+          </button>
+          <button class="category__btn sec" data-filter="Css">
+            Css <span class="category__count">2</span>
+          </button>
+          <button class="category__btn sec" data-filter="JavaScript">
+            JavaScript <span class="category__count">3</span>
+          </button>
+        </div>
+        <div class="work__projects">
+          <a href="" class="project" target="blank" data-type="front-end">
+            <img
+              src="./imgs/projects/youtube.png"
+              alt="Youtube"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explantion</span>
+            </div>
+          </a>
+          <a
+            href="https://naver.com"
+            class="project"
+            target="blank"
+            data-type="front-end"
+          >
+            <img src="./imgs/projects/navbar.png" alt="navbar" />
+            <div class="project__description">
+              <h3>Responsive Navbar</h3>
+              <span>HTML, CSS with media query</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="Css">
+            <img
+              class="project__img"
+              src="./imgs/projects/woolworth2.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="Css">
+            <img class="project__img" src="./imgs/projects/accor.png" alt="" />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="JavaScript">
+            <img
+              class="project__img"
+              src="./imgs/projects/woolworth2.png"
+              alt=""
+            />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="JavaScript">
+            <img class="project__img" src="./imgs/projects/grain.png" alt="" />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+          <a href="" class="project" data-type="JavaScript">
+            <img class="project__img" src="./imgs/projects/legal.png" alt="" />
+            <div class="project__description">
+              <h3>Project</h3>
+              <span>Explanation</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h1>Testimonoals</h1>
+        <h3>See what they say about me</h3>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="./imgs/testimonial/cha.png"
+              alt="People"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <p>
+                자신의 미래에 대해 항상 고민하고, 미래를 이루기 위해서 계획하고,<br> 노력하는 것은 우리의 삶을 위하여 우리가 해야하는 최소이자 최대라고 생각합니다.<br> 
+                고민하고 가족과 함께하는 열심인 하루하루를 항상 응원합니다.
+              </p>
+              <div class="name"><a href="https://unihints.hannam.ac.kr/haksa/gyowon_detail/detail.jsp?param=1475325">차신 교수님</a>/ 한남대학교</div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eaquefuga libero nulla eveniet aperiam laborum, quis provident
+                quibusdam officiis reprehenderit, placeat neque perspiciatis
+                vero explicabo tempora, dignissimos accusantium inventore
+                ducimus!
+              </p>
+              <div class="name"><a href="">Seung Guk</a>/ null</div>
+            </div>
+            <img
+              s
+              src="./imgs/testimonial/people1.jpg"
+              alt="People"
+              class="testimonial__avatar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">dbtmd878@naver.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/dbtmd878/Web_portfolio" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://blog.naver.com/dbtmd878" target="_blank">
+          <i class="fas fa-blog"></i>
+        </a>
+      </div>
+      <p class="contact__rights">
+        2021 Seung Guk ~ All rights reserved
+      </p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
